@@ -1,17 +1,16 @@
 """
 Contributed by GitHub User: sharmsourab93
 Python : Bubble Sort
-         Worst Case Performance: O(n^2), O(n^2) Swaps
-         Best Case Performance: O(n), O(1) swaps
-         Worst Case Space Complexity: O(1) Auxiliary Space
 """
 
 
+# Method to Iterate through the array and print elements
 def print_array(arr):
     for i in arr:
         print(i, end=" ")
 
 
+# Bubble Sort Method
 def bubble_sort(arr, size):
     for i in range(size):
         for j in range(size-i-1):
