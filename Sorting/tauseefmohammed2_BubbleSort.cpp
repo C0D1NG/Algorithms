@@ -39,3 +39,9 @@ int main(){
     //Calling Bubble Sort Function
     BubbleSort(arr, n);
 }
+
+/* Input :
+Enter Number of Elements : 5
+Enter Array Elements : 12 54 3 11 1
+Array After Sorting : 1 3 11 12 54
+*/
