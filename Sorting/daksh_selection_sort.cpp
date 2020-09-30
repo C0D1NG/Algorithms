@@ -24,7 +24,7 @@ void selectionSort(int arr[], int n)
   
         // Swap the found minimum element with the first element  
         swap(&arr[min_idx], &arr[i]);  
-    }  
+    }
 }  
   
 
