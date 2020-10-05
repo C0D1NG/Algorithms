@@ -1,4 +1,4 @@
-# Algorithem
+# Algorithm
 def linear_search(item_list:list, search_key):
     for i in range(len(item_list)):
         if (item_list[i]==search_key):
