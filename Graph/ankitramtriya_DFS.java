@@ -52,40 +52,7 @@ class dfs_bfs{
 	 	for(int i=0;i<pie.length;i++)
 	 		System.out.print(" parent of the node " +i+ " is: "+pie[i]);
 	 }
-	public void bfs(ArrayList<LinkedList<list_vertices>> graph,int src_vertex)
-	{
-	 	boolean[] visited = new boolean[graph.size()];
-	 	Queue<Integer> que = new LinkedList<Integer>();
-	 	que.add(src_vertex);
-	 	while(true)
-	 	{
-		 	while(que.peek()!=null)
-		 	{
-		 		int head = que.poll();
-		 		if(visited[head]==false)
-		 		{
-		 			visited[head] = true;
-		 			System.out.print(head+"\t");
-		 		}
-		 		LinkedList<list_vertices> adjacent_vertex = graph.get(head);
-		 		for (int i=0;i<adjacent_vertex.size();i++) 
-		 		{
-		 			list_vertices vertex = adjacent_vertex.get(i);
-		 			int temp = vertex.name_of_vertices;
-		 			if(visited[temp]==false)
-		 			{
-		 				que.add(temp);
-		 			}	
-		 		}
-		 	}
-		 	if(check_all_visited(visited)==-1)
-		 		break;
-		 	else
-		 	{
-		 		que.add(check_all_visited(visited));
-		 	}
-		}
-	}
+	
  private int check_all_visited(boolean[] visited)
  {
  	for(int i=0;i<visited.length;i++)
